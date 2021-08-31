@@ -1,0 +1,135 @@
+<! DOCTYPE html>
+<html>
+<title> Abaré DevKIDS </title>
+<meta charset = "UTF-8">
+<meta name = "viewport" content = "width = device-width, initial-scale = 1">
+<link rel = "stylesheet" href = "css\w3.css">
+<link rel = "stylesheet" href = "css\w3-theme-black.css">
+<link rel = "stylesheet" href = "css\font-awesome.min.css">
+<style>
+  .estilo{
+    color:rgb(42, 126, 165);
+  }
+  .myDiv {
+    border: 1px outset lightblue;
+    background-color: rgb(222, 225, 226);    
+    text-align: left;
+    text-align: center;
+  }
+  .imagem-fundo {
+    background: URL(fig1.png);
+  }
+  </style>
+<body id = "minhaPágina">
+
+<! - Barra lateral ao clicar ->
+<nav class = "w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-xxlarge" style = "display: none; z-index: 2" id = "mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-display-topright w3-text-teal"> Fechar
+    <i class = "fa fa-remove"> </i>
+  </a>
+  <a href="index2.html" class="w3-bar-item w3-button"> Inicio </a>
+  <a href="#" class="w3-bar-item w3-button"> Equipe </a>
+  <a href="index2.html#work" class="w3-bar-item w3-button"> Objetivo </a>
+  <a href="#" class="w3-bar-item w3-button"> Jogos </a>
+  <a href="videos.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white"> Vídeos </a>
+  <a href="https://abaredevkids.mvsolucoes.com/contato/contact-us/" class ="w3-bar-item w3-button"target=_blank> Contato </a>
+  <a href="arduino.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white"> Arduíno </a>
+  <a href="raspberry.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white"> Raspberry Pi </a>
+  <a href="python.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white"> Python </a>
+</nav>
+
+<! - Navbar ->
+<div class = "w3-top">
+ <div class = "w3-bar w3-theme-d2 w3-left-align">
+  <a class = "w3-bar-item w3-botão w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href = "javascript: void (0);" onclick = "openNav ()"> </a>
+  <a href="index2.html" class="w3-bar-item w3-button w3-teal"> <i class = "fa fa-home w3-margin-right"> </i> Inicio </a>
+  <a href="#team" class="w3-bar-item w3-button w3-hide-small w3-hover-white"> Equipe </a>
+  <a href="index2.html#work" class="w3-bar-item w3-button w3-hide-small w3-hover-white"> Objetivo </a>
+  <a href="#pricing" class="w3-bar-item w3-button w3-hide-small w3-hover-white"> Jogos </a>
+  <a href="videos.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white"> Vídeos </a>
+  <a href="https://abaredevkids.mvsolucoes.com/contato/contact-us/" class ="w3-bar-item w3-button"target=_blank> Contato </a>
+  <a href="arduino.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white"> Arduíno </a>
+  <a href="raspberry.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white"> Raspberry Pi </a>
+  <a href="python.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white"> Python </a>
+
+    <div class = "w3-dropdown-hover w3-hide-small">
+   </div>
+  </div>
+  
+ </div>
+
+
+  <! - Navbar em telas pequenas ->
+  
+  <div class = "w3-top">
+    <div class = "w3-bar w3-theme-d2 w3-left">
+     <a class = "w3-bar-item w3-botão w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href = "javascript: void (0);" onclick = "openNav ()"> </a>
+     <a href="index2.html" class="w3-bar-item w3-button w3-teal"> <i class = "fa fa-home w3-margin-right"> </i> Inicio </a>
+     <a href="index2.html#team" class="w3-bar-item w3-button">Equipe</a>
+    <a href="index2.html#work" class="w3-bar-item w3-button">Objetivo</a>
+    <a href="index2.html#pricing" class="w3-bar-item w3-button">Jogos</a>
+    <a href="videos.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white"> Vídeos </a>
+    <a href="https://abaredevkids.mvsolucoes.com/contato/contact-us/" class ="w3-bar-item w3-button"target=_blank> Contato </a>
+    <a href="arduino.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white"> Arduíno </a>
+    <a href="raspberry.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white"> Raspberry Pi </a>
+    <a href="python.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white"> Python </a>
+    <div class = "w3-dropdown-hover w3-hide-small"></div>
+    </div>
+</div>
+    <div class = "w3-display-container w3-animate-opacity">
+
+    </div>
+    <div style = "margin-top: 40px; text-align: center; background-image: radial-gradient(circle, #2e169b 0%, #060808 100%);;">
+      <img src = "jogos1.png" height="100px" width="500px">
+    </div>
+
+  <div class = "w3-container w3-padding-64 w3-theme-l5 myDiv">
+    <h2> <strong> Nível Médio: Em progresso de Desenvolvimento... </strong></h2>
+    
+  </div>
+
+
+
+
+
+
+<! - Rodapé ->
+<footer class = "w3-container w3-padding-32 w3-theme-d1 w3-center">
+  <h4> Siga-nos para melhor nos conhecermos </h4>
+  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Facebook"> <i class = "fa fa-facebook"> </i> </a>
+  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Twitter"> <i class = "fa fa-twitter"> </i> </a>
+  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Google +"> <i class = "fa fa-instagram"> </i> </a >
+    
+   
+  
+</footer>
+
+<script>
+// Script para navegação lateral
+function w3_open () {
+  var x = document.getElementById ("mySidebar");
+  x.style.width = "300px";
+  x.style.paddingTop = "10%";
+  x.style.display = "bloquear";
+}
+
+// Fechar navegação lateral
+function w3_close () {
+  document.getElementById ("mySidebar"). style.display = "none";
+}
+
+// Usado para alternar o menu em telas menores ao clicar no botão de menu
+function openNav () {
+  var x = document.getElementById ("navDemo");
+  if (x.className.indexOf ("w3-show") == -1) {
+    x.className + = "w3-show";
+  } outro { 
+    x.className = x.className.replace ("w3-show", "");
+  }
+}
+
+
+</script>
+
+</body>
+</html>
