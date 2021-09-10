@@ -2,13 +2,13 @@
 <?php
 
     $dbHost = 'localhost';
-    $dbUsername = 'root';
-    $dbPassword = '';
-    $dbName = 'Abaré';
+    $bancodedados = 'abaretech';
+    $usuario= 'root';
+    $senha = '';
 
-    $conexao = new mysqli($dbHost, $dbUsername, $dbPassword, $dbName);
+    $mysqli = new mysqli($hostname, $usuario, $senha, $bancodedados);
 
-    if($conexao->connect_errno)
+    if($mysqli->connect_errno)
     {
         echo "Erro";
     }
