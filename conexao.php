@@ -2,7 +2,7 @@
 <?php
 
     $host = 'localhost';
-    $user = 'root1';
+    $user = 'root';
     $password = '';
     $database = 'abaretech';
 
