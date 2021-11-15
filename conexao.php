@@ -14,6 +14,6 @@
     }
 
     else{
-        echo "Conexão efetuada com sucesso, agora é com você ALONSO !!!";
+        echo "Conexão efetuada com sucesso com WampServer";
     }
 ?>
