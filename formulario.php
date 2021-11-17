@@ -1,3 +1,26 @@
+<?php
+    if(isset($_POST['submit']))
+    {
+      include_once('conexao.php');
+
+      $nome = $_POST['nome'];
+      $email = $_POST['email'];
+      $telefone = $_POST['telefone'];
+      $sexo = $_POST['genero'];
+      $data_nasc = $_POST['data_nasc'];
+      $endereco = $_POST['endereco'];
+      $cidade = $_POST['cidade'];
+      $estado = $_POST['estado'];
+      $user = $_POST['user'];
+      $pass = $_POST['pass'];
+      $passconfirm = $_POST['passconfirm'];
+
+      $result = mysqli_query($conexao, "INSERT INTO usuarios(nome,email,telefone,sexo,data_nasc,endereco,cidade,estado,
+       user,pass,passconfirm) VALUES ('$nome','$email','$telefone','$sexo','$data_nasc','$endereco','$cidade','$estado',
+       '$user','$pass','$passconfirm')");
+      }
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -66,7 +89,7 @@
           outline: none;
           color: white;
           font-size: 15px;
-          width: 22%;
+          width: 33%;
           letter-spacing: 2px;
           cursor:pointer;
         }
@@ -90,7 +113,7 @@
 </head>
 <body>
   <div class="box">
-   <form action="">
+   <form action="formulario.php" method="POST">
     <fieldset>
       <legend><b>Cadastro de usuário</b></legend>
       <br><br>
@@ -118,8 +141,8 @@
       <input type="radio" id="outro" name="genero" value="outro" required>
       <label for="outro">Outro</label>
       <br> <br>
-        <label for="data_nascimento"><b>Data de Nascimento: </b></label>
-        <input type="date" name="data_nascimento" id="data_nascimento"  required>
+        <label for="data_nasc"><b>Data de Nascimento: </b></label>
+        <input type="date" name="data_nasc" id="data_nasc"  required>
       <br><br><br>
        <div class="inputbox">
             <input type="text" name="endereco" id="endereco" class="inputUser" required>
@@ -137,8 +160,8 @@
       </div>
       <br><br>
       <div class="inputbox">
-        <input type="text" name="login" id="login" class="inputUser" required>
-        <label for="login" class="labelInput">Digite um Login</label>
+        <input type="text" name="user" id="user" class="inputUser" required>
+        <label for="user" class="labelInput">Digite um Login</label>
       </div>
       <br><br>
       <div class="inputbox">
@@ -154,6 +177,7 @@
       <input type="submit" name="submit" id="submit">
       
       <br><br>
+             
     </fieldset>
    </form>
   </div>
