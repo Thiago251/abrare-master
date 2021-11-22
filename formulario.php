@@ -34,7 +34,7 @@
         }
         .box
         {
-                
+              position: absolute; 
               top: 60%;
               left: 50%;
               transform:translate(-50%,-50%);
@@ -174,7 +174,7 @@
         <label for="passconfirm" class="labelInput">Confirme sua Senha</label>
       </div>
       <br><br>
-      <input type="submit" name="submit" id="submit">
+      <input type="submit" name="submit" id="submit" value="Cadastrar">
       
       <br><br>
              

@@ -22,7 +22,7 @@ h2 {
 h3 {
   font-size: 24px;
   margin-bottom: 20px;
-  color: #3D4351; }
+  color: #c0c0c0; }
 
 h4 {
   font-size: 18px; }
@@ -658,7 +658,7 @@ Features-stack
     font-style: italic;
     margin: 30px 0; }
   .testimonial-slider p {
-    color: #ACB1B4;
+    color: #f5fafd;
     text-transform: uppercase;
     letter-spacing: 2px; }
 
