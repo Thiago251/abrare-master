@@ -159,11 +159,11 @@
         <label for="estado" class="labelInput">Estado</label>
       </div>
       <br><br>
-      <div class="inputbox">
+      <!--<div class="inputbox">
         <input type="text" name="user" id="user" class="inputUser" required>
         <label for="user" class="labelInput">Digite um Login</label>
-      </div>
-      <br><br>
+      </div> 
+      <br><br>-->
       <div class="inputbox">
         <input type="text" name="pass" id="pass" class="inputUser" required>
         <label for="pass" class="labelInput">Digite uma senha</label>
