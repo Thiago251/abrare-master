@@ -1,5 +1,8 @@
 <?php
 
+if(!isset($_SESSION)){
+  session_start();
+}
 include('conexao.php');
 
 if(isset($_POST['email'])|| isset($_POST['pass'])){
@@ -23,7 +26,7 @@ if(isset($_POST['email'])|| isset($_POST['pass'])){
             }
             $_SESSION['email'] = $usuario['email'];
             $_SESSION['pass'] = $usuario['pass'];
-              header("location: index.html");
+              header("location: main.php");
 
 
         } else {

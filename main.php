@@ -1,3 +1,11 @@
+<?php
+if(!isset($_SESSION)){
+    session_start();
+}
+
+//include('validacao.php');
+
+?>
 <!doctype html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
@@ -44,15 +52,16 @@
                                 <li><a href="jogos.html" target="jogos.html">Jogos</a></li>
                                 <li><a href="videos.html" target="videos.html">Videos</a></li>
                                 <li><a href="arduino.html" target="arduino.html">Arduíno</a></li>
-                                <li><a href="#Raspberry Pi">Raspberry Pi</a></li>
+                                <li><a href="raspberry.html" target="raspberry.html">Raspberry Pi</a></li>
                                 <li><a href="python.html" target="python.html">Python</a></li>
                                 <li><a href="noticias.html" target="python.html">Noticias</a></li>
                                 <li><a href="contatos.html" target="contatos.html">Contato</a></li>
-                            
+                                <li><a href="https://classroom.google.com/c/MzIwNTYxMDQ4NDg3?cjc=3y3joqu"
+                                        target="">Fórum</a></li>
                             </ul>
                             <ul class="member-actions">
-                                <li><a href="http://127.0.0.1/abrare-master/login.php" class="btn-white btn-small" target="http://127.0.0.1/abrare-master/login.php">Login</a></li>
-                                <li><a href="http://127.0.0.1/abrare-master/formulario.php" class="btn-white btn-small" target="http://127.0.0.1/abrare-master/formulario.php">Cadastro</a></li>
+                                <li><a href="logout.php" class="btn-white btn-small">Logout</a></li>
+
 
                             </ul>
                         </nav>
@@ -162,7 +171,7 @@
                                 <h3>Marden Jeyffer</h3>
                                 <h2>"Membro fundador do projeto Abaré Tech"</h2>
                                 <p class="author">Especialista em
-                                    Controle de Automação Industrial - Redes Insdustriais - Robótica - Embarcados </p>
+                                    Controle de Automação Industrial - Redes Insdustriais - Robótica - Embarcados - Data Science </p>
                            </li>
                         </ul>
                     </div>

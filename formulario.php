@@ -18,7 +18,13 @@
       $result = mysqli_query($conexao, "INSERT INTO usuarios(nome,email,telefone,sexo,data_nasc,endereco,cidade,estado,
        user,pass,passconfirm) VALUES ('$nome','$email','$telefone','$sexo','$data_nasc','$endereco','$cidade','$estado',
        '$user','$pass','$passconfirm')");
+        echo"Cadastrado com Sucesso !";    
+        header("Location: popupsSucesso.php");
+        
       }
+
+      
+      
 ?>
 
 <!DOCTYPE html>
@@ -165,12 +171,12 @@
       </div> 
       <br><br>-->
       <div class="inputbox">
-        <input type="text" name="pass" id="pass" class="inputUser" required>
+        <input type="password" name="pass" id="pass" class="inputUser" required>
         <label for="pass" class="labelInput">Digite uma senha</label>
       </div>
       <br><br>
       <div class="inputbox">
-        <input type="text" name="passconfirm" id="passconfirm" class="inputUser" required>
+        <input type="password" name="passconfirm" id="passconfirm" class="inputUser" required>
         <label for="passconfirm" class="labelInput">Confirme sua Senha</label>
       </div>
       <br><br>
