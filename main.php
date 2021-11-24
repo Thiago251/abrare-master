@@ -1,7 +1,10 @@
 <?php
+
+include('validacao.php');
 if(!isset($_SESSION)){
     session_start();
-}
+
+  }
 
 //include('validacao.php');
 
@@ -46,19 +49,19 @@ if(!isset($_SESSION)){
                 <div class="header-content">
                     <div class="logo"><a href="#logo"><img src="img/" alt=""></a></div>
                     <div class="header-nav">
-                        <nav>
+                    <nav>
                             <ul class="primary-nav">        
-                                <li><a href="http://127.0.0.1/abrare-master/main.php" target="http://127.0.0.1/abrare-master/main.php">HOME</a></li>                  
-                                <li><a href="http://127.0.0.1/abrare-master/jogos.php" target="http://127.0.0.1/abrare-master/jogos.php">Jogos</a></li>
-                                <li><a href="http://127.0.0.1/abrare-master/videos.php" target="http://127.0.0.1/abrare-master/videos.php">Vídeos</a></li>
-                                <li><a href="http://127.0.0.1/abrare-master/arduino.php" target="http://127.0.0.1/abrare-master/arduino.php">Arduíno</a></li>
-                                <li><a href="http://127.0.0.1/abrare-master/raspberry.php" target="http://127.0.0.1/abrare-master/raspberry.php">Raspberry Pi</a></li>
-                                <li><a href="http://127.0.0.1/abrare-master/python.php" target="http://127.0.0.1/abrare-master/python.php">Python</a></li>
-                                <li><a href="http://127.0.0.1/abrare-master/noticias.php" target="http://127.0.0.1/abrare-master/noticias.php">Notícias</a></li>
+                                <li><a href="http://127.0.0.1/abrare-master/main.php">HOME</a></li>                  
+                                <li><a href="http://127.0.0.1/abrare-master/jogos.php" >Jogos</a></li>
+                                <li><a href="http://127.0.0.1/abrare-master/videos.php" >Vídeos</a></li>
+                                <li><a href="http://127.0.0.1/abrare-master/arduino.php" >Arduíno</a></li>
+                                <li><a href="http://127.0.0.1/abrare-master/raspberry.php">Raspberry Pi</a></li>
+                                <li><a href="http://127.0.0.1/abrare-master/python.php">Python</a></li>
+                                <li><a href="http://127.0.0.1/abrare-master/noticias.php">Notícias</a></li>
                                 <li><a href="contatos.html" target="contatos.html">Contato</a></li>
                                 <li><a href="https://classroom.google.com/c/MzIwNTYxMDQ4NDg3?cjc=3y3joqu"
-                                        target="">Fórum</a></li>
-                            </ul>
+                                        target="https://classroom.google.com/c/MzIwNTYxMDQ4NDg3?cjc=3y3joqu">Fórum</a></li>
+                             </ul>
                             <ul class="member-actions">
                                 <li><a href="logout.php" class="btn-white btn-small">Logout</a></li>
                             </ul>
@@ -84,6 +87,7 @@ if(!isset($_SESSION)){
                         <p><strong>Levar a linguagem de programação para as crianças e adolescente utilizando as
                                 ferramentas gratuítas disponibilizadas para praticar e desenvolver a linguagem básica a
                                 mais avançada relaciondas a Arduíno e Raspberry Pi.</strong></p>
+                               
                     </div>
                 </div>
                 <div class="col-md-4 intro-feature">
@@ -105,8 +109,9 @@ if(!isset($_SESSION)){
                         <h3><strong>Benefícios para as crianças</strong></h3>
                         <p><strong>Estímulo do coordenação motora, raciocínio lógico, desafios constantes à
                                 criatividade, ajuda a organizar os pensamentos e principalmente Trabalho em
-                                equipe.</strong>
+                                equipe.</strong> 
                         <p>
+                        
                     </div>
                 </div>
                 <div class="col-md-4 intro-feature">

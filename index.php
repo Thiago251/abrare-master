@@ -12,22 +12,24 @@ if(isset($_POST['email'])|| isset($_POST['pass'])){
         echo "Preencha sua senha";
     } else {
 
-      $sql_code = "SELECT email,pass FROM usuarios WHERE email='".$_POST['email']."' AND pass='".$_POST['pass']."'";
-               
+       
+
+      //$sql_code = "SELECT email,pass FROM usuarios WHERE email='".$_POST['email']."' AND pass='".$_POST['pass']."'";
+      $sql_code = "SELECT * FROM usuarios WHERE email='".$_POST['email']."' AND pass='".$_POST['pass']."'";
+      
         //$sql_query = $mysqli->query($sql_code) or die("falha no banco de dados SQL: " . $mysqli->error);
-         // $conexao->query($sql_code) or die("falha no banco de dados SQL: " . $mysqli->error); 
-         $sql_query = $conexao->query($sql_code) or die("falha no banco de dados SQL: " . $mysqli->error);
+         $sql_query = $conexao->query($sql_code) or die("falha no banco de dados SQL: " . $conexao->error);
         
         $quantidade = $sql_query->num_rows;
         if($quantidade == 1){
             $usuario = $sql_query->fetch_assoc();
             if (isset($_SESSION)){
-                  session_start();
+                  session_start();                 
             }
             $_SESSION['email'] = $usuario['email'];
             $_SESSION['pass'] = $usuario['pass'];
               header("location: main.php");
-
+            //echo $_POST['email'];
 
         } else {
             echo "E-mail ou Senha incorretos";
@@ -130,7 +132,7 @@ if(isset($_POST['email'])|| isset($_POST['pass'])){
 </head>
 <body>
   <div class="box">
-   <form action="index.php" method="POST">
+   <form action="" method="POST">
     <fieldset>
       <legend><b>Acessar sua conta</b></legend>
      
