@@ -52,24 +52,20 @@ h2, p {
                     <div class="logo"><a href="#logo"><img src="img/" alt=""></a></div>
                     <div class="header-nav">
                         <nav>
-                              <ul class="primary-nav">
-                                <li><a href="index.html" target="index.html">Home</a></li>
+                            <ul class="primary-nav">                           
                                 <li><a href="jogos.html" target="jogos.html">Jogos</a></li>
                                 <li><a href="videos.html" target="videos.html">Videos</a></li>
                                 <li><a href="arduino.html" target="arduino.html">Arduíno</a></li>
-                                <li><a href="#Raspberry Pi">Raspberry Pi</a></li>
+                                <li><a href="raspberry.html" target="raspberry.html">Raspberry Pi</a></li>
                                 <li><a href="python.html" target="python.html">Python</a></li>
                                 <li><a href="noticias.html" target="python.html">Noticias</a></li>
                                 <li><a href="contatos.html" target="contatos.html">Contato</a></li>
                                 <li><a href="https://classroom.google.com/c/MzIwNTYxMDQ4NDg3?cjc=3y3joqu"
                                         target="">Fórum</a></li>
-                              </ul>          
-                            <ul class="member-actions">
-                                <li><a href="login2.html" class="btn-white btn-small">Login</a></li>
-                                <li><a href="cadastro.html" class="btn-white btn-small">Cadastro</a></li>
-
                             </ul>
-
+                            <ul class="member-actions">
+                                <li><a href="logout.php" class="btn-white btn-small">Logout</a></li>
+                            </ul>
                         </nav>
                     </div>
                     <div class="navicon">
