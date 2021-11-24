@@ -43,6 +43,7 @@ if(isset($_POST['email'])|| isset($_POST['pass'])){
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="shortcut icon" href="img/logo.bmp">
     <title>Login Usuário</title>
     <style>
         body {
@@ -127,7 +128,6 @@ if(isset($_POST['email'])|| isset($_POST['pass'])){
         a:active {
           color: blue;
         }
-
     </style>
 </head>
 <body>
@@ -147,7 +147,7 @@ if(isset($_POST['email'])|| isset($_POST['pass'])){
         <label for="pass" class="labelInput">Senha</label>
       </div>
       <br><br>
-      <input type="submit" name="submit" id="submit" value="Entrar">    
+      <input type="submit" name="submit" id="submit" value="Entrar">     
       <br><br><br><br>
       <div class="novasenha">
       <li><a href="novasenha.html" target="novasenha.html">Esqueci minha senha</a></li>
