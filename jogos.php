@@ -45,20 +45,21 @@ include('validacao.php');
                     <div class="header-nav">
                         <nav>
                             <ul class="primary-nav">
-                              <li><a href="index.html" >Home</a></li>
-                              <li><a href="jogos_.html" >Jogos</a></li>
-                              <li><a href="videos_.html" >Vídeos</a></li>
-                              <li><a href="arduino_.html" >Arduíno</a></li>
-                              <li><a href="raspberry_.html" >Raspberry Pi</a></li>
-                              <li><a href="python_.html" >Python</a></li>
-                              <li><a href="noticias_.html" >Notícias</a></li>
+                              <li><a href="main.php" >Home</a></li>
+                              <li><a href="jogos.php" >Jogos</a></li>
+                              <li><a href="videos.php" >Vídeos</a></li>
+                              <li><a href="arduino.php" >Arduíno</a></li>
+                              <li><a href="raspberry.php" >Raspberry Pi</a></li>
+                              <li><a href="python.php" >Python</a></li>
+                              <li><a href="noticias.php" >Notícias</a></li>
                               <li><a href="contatos.html" target="contatos.html">Contato</a></li>
+                              <li><a href="https://classroom.google.com/c/MzIwNTYxMDQ4NDg3?cjc=3y3joqu"
+                                        target="https://classroom.google.com/c/MzIwNTYxMDQ4NDg3?cjc=3y3joqu">Fórum</a></li>
+                               
                             </ul>          
-                          <ul class="member-actions">
-                            <li><a href="http://127.0.0.1/abrare-master/index.php" class="btn-white btn-small" href="http://127.0.0.1/abrare-master/index.php">Login</a></li>
-                            <li><a href="http://127.0.0.1/abrare-master/formulario.php" class="btn-white btn-small" href="http://127.0.0.1/abrare-master/formulario.php">Cadastrar</a></li>
-                           
-                          </ul>
+                            <ul class="member-actions">
+                                <li><a href="logout.php" class="btn-white btn-small">Logout</a></li>
+                            </ul>
                       </nav>
                     </div>
                     <div class="navicon">

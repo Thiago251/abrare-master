@@ -15,6 +15,12 @@
       $pass = $_POST['pass'];
       $passconfirm = $_POST['passconfirm'];
 
+      $nome = filter_input(INPUT_POST, 'nome', FILTER_SANITIZE_SPECIAL_CHARS);
+      $email = filter_input(INPUT_POST,'email', FILTER_SANITIZE_EMAIL);
+      $telefone = filter_input(INPUT_POST,'telefone', FILTER_SANITIZE_NUMBER_INT);
+      $endereco = filter_input(INPUT_POST, 'endereco', FILTER_SANITIZE_SPECIAL_CHARS);
+      $cidade = filter_input(INPUT_POST, 'cidade', FILTER_SANITIZE_SPECIAL_CHARS);
+
       $result = mysqli_query($conexao, "INSERT INTO usuarios(nome,email,telefone,sexo,data_nasc,endereco,cidade,estado,
        user,pass,passconfirm) VALUES ('$nome','$email','$telefone','$sexo','$data_nasc','$endereco','$cidade','$estado',
        '$user','$pass','$passconfirm')");
@@ -32,6 +38,8 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="shortcut icon" href="img/logo.bmp">
+    
     <title>Cadastro Usuário</title>
     <style>
         body {
@@ -134,7 +142,7 @@
       </div>
       <br><br>
       <div class="inputbox">
-        <input type="tel" name="telefone" id="telefone" class="inputUser" required>
+        <input type="number" name="telefone" id="telefone" class="inputUser"  required>
         <label for="telefone" class="labelInput">Telefone</label>
       </div>
       <p>Sexo:</p>

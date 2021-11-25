@@ -167,7 +167,8 @@ if(isset($_POST['email'])|| isset($_POST['pass'])){
       <div class="novasenha">
       <li><a href="http://127.0.0.1/abrare-master/formulario.php" target="http://127.0.0.1/abrare-master/formulario.php">Ainda não é inscrito?<b>Cadastre-se!</b></a></li>       
       </div>
- <div class = "php">
+        
+        <div class="php">
       <?php
 if(!isset($_SESSION)){
   session_start();
@@ -179,7 +180,8 @@ if(empty($_SESSION['email'])){
   }
 }
 ?>
-  </div>
+      
+       </div>
 
       </fieldset>
    </form>
