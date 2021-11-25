@@ -32,7 +32,8 @@ if(isset($_POST['email'])|| isset($_POST['pass'])){
             //echo $_POST['email'];
 
         } else {
-            echo "E-mail ou Senha incorretos";
+            echo "";
+            //echo "E-mail ou Senha incorretos";
         }
     }
 
@@ -128,6 +129,16 @@ if(isset($_POST['email'])|| isset($_POST['pass'])){
         a:active {
           color: blue;
         }
+        .php
+        {
+              position: absolute;
+              color: red;
+              left: 40%;
+              bottom: 39%;
+              transform:translate(-50%,-50%);
+              font-size: 11px;
+              color: rgb(255,99,71);         
+        }
     </style>
 </head>
 <body>
@@ -149,12 +160,27 @@ if(isset($_POST['email'])|| isset($_POST['pass'])){
       <br><br>
       <input type="submit" name="submit" id="submit" value="Entrar">     
       <br><br><br><br>
+  
       <div class="novasenha">
-      <li><a href="novasenha.html" target="novasenha.html">Esqueci minha senha</a></li>
+      <li><a href="novasenha.html" target="novasenha.html">Esqueceu a senha?</a></li>
       </div>
       <div class="novasenha">
       <li><a href="http://127.0.0.1/abrare-master/formulario.php" target="http://127.0.0.1/abrare-master/formulario.php">Ainda não é inscrito?<b>Cadastre-se!</b></a></li>       
       </div>
+ <div class = "php">
+      <?php
+if(!isset($_SESSION)){
+  session_start();
+}
+if(empty($_SESSION['email'])){       
+ if(isset($_POST['email'])){
+     echo "*Senha ou E-mail incorreto. Tente novamente ou clique em 'Esqueceu a senha?' para redefini-la.
+     ";
+  }
+}
+?>
+  </div>
+
       </fieldset>
    </form>
   </div>

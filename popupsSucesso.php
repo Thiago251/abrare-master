@@ -27,9 +27,9 @@
               background-color: rgba(22, 12, 33, 0.2);
               padding: 30px;
               border-radius: 0px;
-              border: 10px greenyellow;
+              border: 20px greenyellow;
               width: 30%;
-              color: rgb(10, 128, 0);
+              color: rgb(255,99,71); 
         }
         fieldset{
               border: 0px solid darkgray;
@@ -39,7 +39,8 @@
           padding: 20px;
           text-align: center;
           background-color: darkgray;
-          border-radius: 5px;    
+          border-radius: 5px;
+          color: rgb(10, 128, 0)     
         }
         .inputbox{
           position: relative;
