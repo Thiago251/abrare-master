@@ -39,7 +39,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link rel="shortcut icon" href="img/logo.bmp">
-    
+
     <title>Cadastro Usuário</title>
     <style>
         body {
@@ -57,6 +57,7 @@
               border-radius: 25px;
               width: 40%;
               color: white;
+              
         }
         fieldset{
               border: 3px solid darkgray;
@@ -137,7 +138,7 @@
       </div>
       <br><br>
       <div class="inputbox">
-        <input type="text" name="email" id="email" class="inputUser" required>
+        <input type="email" name="email" id="email" class="inputUser" required>
         <label for="email" class="labelInput">E-mail</label>
       </div>
       <br><br>

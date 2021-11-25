@@ -11,7 +11,7 @@ include('validacao.php');
     <meta charset="utf-8">
     <!--<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">-->
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Arduíno</title>
+    <title>Raspberry Pi</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -22,15 +22,33 @@ include('validacao.php');
     <link rel="stylesheet" href="css/jquery.fancybox.css">
     <link rel="stylesheet" href="css/flexslider.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/teste.css">
     <link rel="stylesheet" href="css/queries.css">
     <link rel="stylesheet" href="css/etline-font.css">
     <link rel="stylesheet" href="bower_components/animate.css/animate.min.css">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link rel="shortcut icon" href="img/logo.bmp">
     <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    
+        <style>
+
+    .passosRasp{      
+        position: relative;
+        left: 350px;
+        
+        
+    }
+    #primeiroRasp{
+        position: relative;
+        left: 80px;
+        
+    }
+    </style>
+
 </head>
  <body>
      <!--[if lt IE 8]>
+     class="navigation"
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
     <section class="hero">
@@ -67,11 +85,12 @@ include('validacao.php');
         <div class="down-arrow floating-arrow"><a href="#"><i class="fa fa-angle-down"></i></a></div>
     </section>
     
-    <div>
+  <div class="passosRasp">
     <h2> Meus Primeiros Passos no Raspberry Pi </h2>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/X7WMSfEfZGg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="560" height="315" id=primeiroRasp src="https://www.youtube.com/embed/X7WMSfEfZGg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </div>
 
+  <br><br>
     <footer class="bg-light py-5">
         <div class="container px-4 px-lg-5">
             <div class="small text-center text-muted">Copyright &copy; 2021 - Company

@@ -28,6 +28,14 @@ include('validacao.php');
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link rel="shortcut icon" href="img/logo.bmp">
     <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    <style>
+        .textFormat{
+            padding: 10px;         
+            width: 500px;
+            height: 300px;
+            text-align: justify;
+        }
+    </style>
 </head>
 <body id="top">
     <!--[if lt IE 8]>
@@ -56,7 +64,7 @@ include('validacao.php');
                                 <li><a href="logout.php" class="btn-white btn-small">Logout</a></li>
                             </ul>
                         </nav>
-                    </div>
+                </div>
                     <div class="navicon">
                         <a class="nav-toggle" href="#"><span></span></a>
                     </div>
@@ -65,6 +73,8 @@ include('validacao.php');
         </section>
         <div class="down-arrow floating-arrow"><a href="#"><i class="fa fa-angle-down"></i></a></div>
     </section>
+
+<div   class = "w3-display-container w3-animate-opacity" >
 
 <body>
 
